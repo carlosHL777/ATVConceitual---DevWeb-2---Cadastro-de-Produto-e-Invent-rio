@@ -1,0 +1,158 @@
+html {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    background-color: #222831;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #393E46;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #DFD0B8;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cadastro {
+    padding: 5px;
+}
+
+.form-cadastro input, select {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #222831;
+    color: #DFD0B8;
+    font-size: 16px;
+}
+
+.form-cadastro label {
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+#titulo-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#btn-cadastrar {
+    width: 25%;
+    background-color: #DFD0B8;
+    color: #222831;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-vender {
+    width: 25%;
+    background-color: #DFD0B8;
+    color: #222831;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-cadastrar:hover, #btn-vender:hover {
+    background-color: #E0C097;
+}
+
+.barra-pesquisa {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.barra-pesquisa input,
+.barra-pesquisa button {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: #222831;
+    color: #DFD0B8;
+    font-size: 16px;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    max-width: 520px;
+}
+
+.barra-pesquisa input:focus {
+    outline: none;
+    border-color: #FFD369;
+}
+
+.barra-pesquisa button {
+    background-color: #DFD0B8;
+    color: #222831;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.barra-pesquisa button:hover {
+    background-color: #E0C097;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    text-decoration: none;
+    color: white;
+}
+
+.lista-produtos {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.lista-produtos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #DFD0B8;
+    border-bottom: 2px solid #FFD369;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.lista-produtos table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #DFD0B8;
+}
+
+.lista-produtos tr {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.lista-produtos td {
+    font-weight: 200;
+    justify-self: center;
+    padding: 12px;
+    border-bottom: 1px solid #444;
+}
