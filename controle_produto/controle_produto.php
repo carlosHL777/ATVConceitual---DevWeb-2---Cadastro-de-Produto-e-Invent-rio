@@ -18,26 +18,26 @@
 
                 
                 <label for="descricao">Descrição:</label><br>    
-                <input type="text" id="descricao" name="descricao" placeholder="Digite a descrição do produto" required><br><br>
+                <input type="text" id="descricao" name="descricao" style="width: 60%;" placeholder="Digite a descrição do produto" required><br><br>
                 
                 <label for="categoria">Categoria:</label><br>
-                <select id="categoria" name="categoria" required>
+                <select id="categoria" name="categoria" style="width: 40%;" required>
                     <option value="informatica">Informática</option>
                     <option value="eletronicos">Eletrônicos</option>
                     <option value="material">Material</option>
                 </select><br><br>
                       
                 <label for="valor_compra">Valor Compra(R$):</label><br>
-                <input type="number" id="valor_compra" name="valor_compra" required><br><br>
+                <input type="number" id="valor_compra" name="valor_compra" style="width: 30%;"required><br><br>
 
                 <label for="valor_venda">Valor Venda(R$):</label><br>
-                <input type="number" id="valor_venda" name="valor_venda" required><br><br>
+                <input type="number" id="valor_venda" name="valor_venda" style="width: 30%;" required><br><br>
 
                 <label for="quantidade">Qtd. Estoque:</label><br>
-                <input type="number" id="estoque" name="estoque" required><br><br>                    
+                <input type="number" id="estoque" name="estoque" style="width: 30%;" required><br><br>                    
                 
-                <input id="btn-cadastrar" type="submit" value="Cadastrar Produto">
-                <input id="btn-vender" type="submit" value="Vender Produto">
+                <input id="btn-cadastrar" type="submit" name="action" value="cadastrar">
+                <input id="btn-vender" type="submit" name="action" value="vender">
             </form>
         </div>
 
@@ -90,5 +90,14 @@
             </table>
         </div>
     </div>
+
+    <script>
+        document.getElementById('btn-vender').addEventListener('click', function() {
+            document.getElementById('categoria').required = false;
+            document.getElementById('valor_compra').required = false;
+            document.getElementById('valor_venda').required = false;
+            document.getElementById('estoque').required = false;
+        });
+    </script>
 </body>
 </html>
